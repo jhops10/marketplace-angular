@@ -1,0 +1,32 @@
+<div class="seller-aut col-md-4 mt-5 mx-auto">
+  <div class="signup">
+    <h3>Cadastrar Vendedor</h3>
+    <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+      <label class="form-label mt-3" for="email">Email</label>
+      <input
+        class="form-control"
+        type="email"
+        ngModel
+        name="email"
+        placeholder="Digite seu e-mail"
+      />
+      <label class="form-label mt-3" for="nome">Nome</label>
+      <input
+        class="form-control"
+        type="text"
+        ngModel
+        name="nome"
+        placeholder="Digite seu nome"
+      />
+      <label class="form-label mt-3" id="senha" for="senha">Senha</label>
+      <input
+        class="form-control"
+        type="password"
+        ngModel
+        name="password"
+        placeholder="Digite sua senha"
+      />
+      <button class="btn btn-success mt-3">Registre-se</button>
+    </form>
+  </div>
+</div>
