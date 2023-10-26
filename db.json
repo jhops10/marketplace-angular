@@ -1,0 +1,22 @@
+{
+  "vendedores": [
+    {
+      "email": "joaowais@gmail.com",
+      "name": "Joao",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "email": "meuemail@gmail.com",
+      "name": "Marcos Teste",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "email": "joaowais@gmail.com",
+      "nome": "Joao Paulo",
+      "password": "88nn7aiv",
+      "id": 3
+    }
+  ]
+}

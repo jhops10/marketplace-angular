@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VendedoresService } from 'src/app/services/vendedores.service';
 
 @Component({
   selector: 'app-vendedor',
@@ -6,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vendedor.component.css'],
 })
 export class VendedorComponent implements OnInit {
-  constructor() {}
+  constructor(private vendedoresService: VendedoresService) {}
 
   ngOnInit(): void {}
 
   signUp(data: Object): void {
-    console.log(data);
+    this.vendedoresService.userSignUp(data).subscribe((res) => {
+      console.log(res);
+    });
   }
 }
