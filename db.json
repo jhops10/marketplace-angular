@@ -1,15 +1,15 @@
 {
   "vendedores": [
     {
-      "email": "joaowais@gmail.com",
       "name": "Joao",
       "password": "1234",
+      "email": "joaowais@gmail.com",
       "id": 1
     },
     {
-      "email": "meuemail@gmail.com",
       "name": "Marcos Teste",
       "password": "1234",
+      "email": "meuemail@gmail.com",
       "id": 2
     },
     {
@@ -17,6 +17,12 @@
       "nome": "Joao Paulo",
       "password": "88nn7aiv",
       "id": 3
+    },
+    {
+      "email": "francisco@teste.com.br",
+      "nome": "Francisco",
+      "password": "1234",
+      "id": 4
     }
   ]
 }
