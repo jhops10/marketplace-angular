@@ -1,5 +1,7 @@
+<!-- Formulário de Cadastro -->
+
 <div class="seller-aut col-md-4 mt-5 mx-auto">
-  <div class="signup">
+  <div *ngIf="!showLogin" class="signup">
     <h3>Cadastrar Vendedor</h3>
     <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
       <label class="form-label mt-3" for="email">Email</label>
@@ -27,6 +29,37 @@
         placeholder="Digite sua senha"
       />
       <button class="btn btn-success mt-3">Registre-se</button>
+      <button (click)="openLoginOrSignUp()" class="btn btn-light mt-3 ms-3">
+        Já é um vendedor? Clique aqui.
+      </button>
+    </form>
+  </div>
+
+  <!-- Formulário de Login -->
+
+  <div *ngIf="showLogin" class="signup">
+    <h3>Login do Vendedor</h3>
+    <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
+      <label class="form-label mt-3" for="email">Email</label>
+      <input
+        class="form-control"
+        type="email"
+        ngModel
+        name="email"
+        placeholder="Digite seu e-mail"
+      />
+      <label class="form-label mt-3" id="senha" for="senha">Senha</label>
+      <input
+        class="form-control"
+        type="password"
+        ngModel
+        name="password"
+        placeholder="Digite sua senha"
+      />
+      <button class="btn btn-success mt-3">Login</button>
+      <button (click)="openLoginOrSignUp()" class="btn btn-light mt-3 ms-3">
+        Ainda não é um vendedor? Registre-se
+      </button>
     </form>
   </div>
 </div>

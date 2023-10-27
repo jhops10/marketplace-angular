@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VendedoresService } from 'src/app/services/vendedores.service';
-import { Router } from '@angular/router';
-import { SignUp } from 'src/app/data-types';
+import { Login, SignUp } from 'src/app/data-types';
 
 @Component({
   selector: 'app-vendedor',
@@ -9,10 +8,9 @@ import { SignUp } from 'src/app/data-types';
   styleUrls: ['./vendedor.component.css'],
 })
 export class VendedorComponent implements OnInit {
-  constructor(
-    private vendedoresService: VendedoresService,
-    private router: Router
-  ) {}
+  constructor(private vendedoresService: VendedoresService) {}
+
+  showLogin: boolean = false;
 
   ngOnInit(): void {
     this.vendedoresService.reloadSeller();
@@ -20,5 +18,13 @@ export class VendedorComponent implements OnInit {
 
   signUp(data: SignUp): void {
     this.vendedoresService.userSignUp(data);
+  }
+
+  login(data: Login): void {
+    this.vendedoresService.userLogin(data);
+  }
+
+  openLoginOrSignUp() {
+    this.showLogin = !this.showLogin;
   }
 }
