@@ -14,13 +14,11 @@ export class VendedorComponent implements OnInit {
     private router: Router
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.vendedoresService.reloadSeller();
+  }
 
   signUp(data: SignUp): void {
-    this.vendedoresService.userSignUp(data).subscribe((res) => {
-      if (res) {
-        this.router.navigate(['vendedor-home']);
-      }
-    });
+    this.vendedoresService.userSignUp(data);
   }
 }

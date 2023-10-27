@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { VendedorComponent } from './pages/vendedor/vendedor.component';
 import { VendedorHomeComponent } from './pages/vendedor-home/vendedor-home.component';
-import { authGuard } from './auth.guard';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   {
@@ -17,7 +17,7 @@ const routes: Routes = [
   {
     path: 'vendedor-home',
     component: VendedorHomeComponent,
-    canActivate: [authGuard],
+    canActivate: [AuthGuard],
   },
 ];
 
