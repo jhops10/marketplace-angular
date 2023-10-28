@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   menuType: string = 'default';
+  nomeVendedor: string = '';
   constructor(private route: Router) {}
 
   ngOnInit(): void {
@@ -15,10 +16,20 @@ export class HeaderComponent implements OnInit {
       if (val.url) {
         if (localStorage.getItem('vendedor') && val.url.includes('vendedor')) {
           this.menuType = 'vendedor';
+          if (localStorage.getItem('vendedor')) {
+            let vendedorStore = localStorage.getItem('vendedor');
+            let vendedorData = vendedorStore && JSON.parse(vendedorStore)[0];
+            this.nomeVendedor = vendedorData.name;
+          }
         } else {
           this.menuType = 'default';
         }
       }
     });
+  }
+
+  logout() {
+    localStorage.removeItem('vendedor');
+    this.route.navigate(['/']);
   }
 }

@@ -9,6 +9,7 @@ import { VendedorComponent } from './pages/vendedor/vendedor.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { VendedorHomeComponent } from './pages/vendedor-home/vendedor-home.component';
+import { AdicionarProdutosComponent } from './pages/adicionar-produtos/adicionar-produtos.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { VendedorHomeComponent } from './pages/vendedor-home/vendedor-home.compo
     HomeComponent,
     VendedorComponent,
     VendedorHomeComponent,
+    AdicionarProdutosComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

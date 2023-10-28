@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { VendedorComponent } from './pages/vendedor/vendedor.component';
 import { VendedorHomeComponent } from './pages/vendedor-home/vendedor-home.component';
 import { AuthGuard } from './auth.guard';
+import { AdicionarProdutosComponent } from './pages/adicionar-produtos/adicionar-produtos.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,11 @@ const routes: Routes = [
   {
     path: 'vendedor-home',
     component: VendedorHomeComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'adicionar-produtos',
+    component: AdicionarProdutosComponent,
     canActivate: [AuthGuard],
   },
 ];
