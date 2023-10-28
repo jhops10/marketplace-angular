@@ -1,13 +1,14 @@
 <div class="add-product container col-md-4 mt-5 mx-auto">
   <h3>Cadastro de Produtos</h3>
+  <p class="message-p">{{ addProductMessage }}</p>
   <form #addProduct="ngForm" (ngSubmit)="adicionarProduto(addProduct.value)">
     <!-- Nome Produto -->
-    <label class="form-label mt-3" for="nome-produto">Nome do Produto</label>
+    <label class="form-label mt-3" for="name">Nome do Produto</label>
     <input
       class="form-control"
       type="text"
       ngModel
-      name="nome-produto"
+      name="name"
       placeholder="Digite o nome do Produto"
     />
     <!-- Preço Produto -->
