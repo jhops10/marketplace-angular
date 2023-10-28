@@ -27,7 +27,7 @@
           <a class="nav-link" href="#">Carrinho(0)</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
+      <form *ngIf="menuType === 'default'" class="d-flex" role="search">
         <input
           class="form-control me-2"
           type="search"

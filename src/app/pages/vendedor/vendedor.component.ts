@@ -8,9 +8,10 @@ import { Login, SignUp } from 'src/app/data-types';
   styleUrls: ['./vendedor.component.css'],
 })
 export class VendedorComponent implements OnInit {
-  constructor(private vendedoresService: VendedoresService) {}
-
   showLogin: boolean = false;
+  authError: string = '';
+
+  constructor(private vendedoresService: VendedoresService) {}
 
   ngOnInit(): void {
     this.vendedoresService.reloadSeller();
@@ -22,6 +23,11 @@ export class VendedorComponent implements OnInit {
 
   login(data: Login): void {
     this.vendedoresService.userLogin(data);
+    this.vendedoresService.isLoginError.subscribe((isError) => {
+      if (isError) {
+        this.authError = 'Email ou Senha Inválidos';
+      }
+    });
   }
 
   openLoginOrSignUp() {

@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Login, SignUp } from '../data-types';
 import { BehaviorSubject } from 'rxjs';
@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class VendedoresService {
   isSellerLoggedIn = new BehaviorSubject<boolean>(false);
+  isLoginError = new EventEmitter<boolean>(false);
 
   constructor(private http: HttpClient, private router: Router) {}
 
@@ -38,12 +39,13 @@ export class VendedoresService {
       )
       .subscribe((result: any) => {
         console.log(result);
-        if (result && result.body && result.body.length) {
-          console.log('Login Sucess');
+        if (result && result.body && result.body.length === 1) {
+          this.isLoginError.emit(false);
           localStorage.setItem('vendedor', JSON.stringify(result.body));
           this.router.navigate(['vendedor-home']);
         } else {
           console.log('Login Failed');
+          this.isLoginError.emit(true);
         }
       });
   }
