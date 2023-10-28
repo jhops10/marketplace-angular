@@ -1,1 +1,51 @@
-<p>adicionar-produtos works!</p>
+<div class="add-product container col-md-4 mt-5 mx-auto">
+  <h3>Cadastro de Produtos</h3>
+  <form #addProduct="ngForm" (ngSubmit)="adicionarProduto(addProduct.value)">
+    <!-- Nome Produto -->
+    <label class="form-label mt-3" for="nome-produto">Nome do Produto</label>
+    <input
+      class="form-control"
+      type="text"
+      ngModel
+      name="nome-produto"
+      placeholder="Digite o nome do Produto"
+    />
+    <!-- Preço Produto -->
+    <label class="form-label mt-3" for="price">Preço</label>
+    <input
+      class="form-control"
+      type="number"
+      ngModel
+      name="price"
+      placeholder="Preço do produto em R$"
+    />
+    <!-- Quantidade Produto -->
+    <label class="form-label mt-3" for="qtd">Quantidade</label>
+    <input
+      class="form-control"
+      type="number"
+      ngModel
+      name="qtd"
+      placeholder="Quantas unidades deseja adicionar?"
+    />
+    <!-- Categoria Produto -->
+    <label class="form-label mt-3" for="category">Categoria</label>
+    <input
+      class="form-control"
+      type="text"
+      ngModel
+      name="category"
+      placeholder="Categoria do Produto"
+    />
+    <!-- Imagem Produto -->
+    <label class="form-label mt-3" for="img">Imagem do Produto</label>
+    <input
+      class="form-control"
+      type="text"
+      ngModel
+      name="img"
+      placeholder="URL"
+    />
+    <button class="btn btn-success mt-3">Adicionar</button>
+  </form>
+</div>

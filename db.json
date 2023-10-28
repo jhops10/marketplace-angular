@@ -5,30 +5,16 @@
       "password": "1234",
       "email": "joaowais@gmail.com",
       "id": 1
-    },
+    }
+  ],
+  "produtos": [
     {
-      "name": "Marcos Teste",
-      "password": "1234",
-      "email": "meuemail@gmail.com",
-      "id": 2
-    },
-    {
-      "email": "joaowais@gmail.com",
-      "nome": "Joao Paulo",
-      "password": "88nn7aiv",
-      "id": 3
-    },
-    {
-      "email": "francisco@teste.com.br",
-      "nome": "Francisco",
-      "password": "1234",
-      "id": 4
-    },
-    {
-      "email": "teste4@gmail.com",
-      "nome": "teste4",
-      "password": "teste4",
-      "id": 5
+      "name": "Iphone 14",
+      "price": "1400,00",
+      "qtd": "10",
+      "category": "Smartphone",
+      "img": "https://s13emagst.akamaized.net/products/48592/48591223/images/res_0a49cd835e308621c4ce9f501418d2a5.jpg",
+      "id": 1
     }
   ]
 }
