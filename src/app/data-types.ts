@@ -15,4 +15,5 @@ export interface Product {
   qtd: string;
   category: string;
   img: string;
+  id: number;
 }
