@@ -5,6 +5,7 @@ import { VendedorComponent } from './pages/vendedor/vendedor.component';
 import { VendedorHomeComponent } from './pages/vendedor-home/vendedor-home.component';
 import { AuthGuard } from './auth.guard';
 import { AdicionarProdutosComponent } from './pages/adicionar-produtos/adicionar-produtos.component';
+import { VendedorUpdateProdutoComponent } from './pages/vendedor-update-produto/vendedor-update-produto.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,11 @@ const routes: Routes = [
   {
     path: 'adicionar-produtos',
     component: AdicionarProdutosComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'update-produtos/:id',
+    component: VendedorUpdateProdutoComponent,
     canActivate: [AuthGuard],
   },
 ];

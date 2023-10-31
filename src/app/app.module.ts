@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { VendedorHomeComponent } from './pages/vendedor-home/vendedor-home.component';
 import { AdicionarProdutosComponent } from './pages/adicionar-produtos/adicionar-produtos.component';
+import { VendedorUpdateProdutoComponent } from './pages/vendedor-update-produto/vendedor-update-produto.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AdicionarProdutosComponent } from './pages/adicionar-produtos/adicionar
     VendedorComponent,
     VendedorHomeComponent,
     AdicionarProdutosComponent,
+    VendedorUpdateProdutoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

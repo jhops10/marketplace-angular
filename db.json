@@ -5,29 +5,27 @@
       "password": "1234",
       "email": "joaowais@gmail.com",
       "id": 1
+    },
+    {
+      "email": "mouraaudio@gmail.com",
+      "nome": "julin",
+      "password": "88nn7aiv",
+      "id": 2
     }
   ],
   "produtos": [
     {
       "name": "Iphone 14",
-      "price": 1400,
-      "qtd": 2,
+      "price": "1400",
+      "qtd": "2",
       "category": "Smartphone",
       "img": "https://s13emagst.akamaized.net/products/48592/48591223/images/res_0a49cd835e308621c4ce9f501418d2a5.jpg",
       "id": 1
     },
     {
-      "name": "Xiaomi Recmi 12C",
-      "price": 650,
-      "qtd": 2,
-      "category": "Smartphone",
-      "img": "https://m.media-amazon.com/images/I/51cU7HevYPL._AC_UF1000,1000_QL80_.jpg",
-      "id": 2
-    },
-    {
       "name": "Galaxy AO3s",
-      "price": 950,
-      "qtd": 2,
+      "price": "950",
+      "qtd": "2",
       "category": "Smartphone",
       "img": "https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/24/53/2453_smartphone-samsung-galaxy-a03s-camera-tripla-traseira-tela-infinita-de-6-5-64gb-4gb-ram-octa-core_l1_637733755121353293.jpg",
       "id": 3
