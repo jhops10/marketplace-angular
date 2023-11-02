@@ -45,6 +45,38 @@
       "category": "Smartwatch",
       "img": "https://a-static.mlcdn.com.br/450x450/smartwatch-samsung-galaxy-watch-4-40mm-bluetooth-preto-sm-r860nzkpzto/kabum/206623/177f2b6c797200d0772e9014da8f938c.jpeg",
       "id": 7
+    },
+    {
+      "name": "Belkit NH New Hair",
+      "price": 120,
+      "qtd": 5,
+      "category": "Estética e Saúde",
+      "img": "https://images.tcdn.com.br/img/img_prod/656618/belkit_nh_new_hair_kit_combo_reconstrucao_e_crescimento_capilar_7_produtos_2441_1_8e68872d8660ef9b9ac4763d289d9fa2.jpg",
+      "id": 8
+    },
+    {
+      "name": "Notebook IdeaPad 3i 15\"",
+      "price": 2520,
+      "qtd": 1,
+      "category": "Notebook/Computadores",
+      "img": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-3i-15in-hero.png?context=bWFzdGVyfHJvb3R8MzM3NTg5fGltYWdlL3BuZ3xoM2MvaDExLzE0MTkxNTE3NDAxMTE4LnBuZ3w4OTg2YTg5YzQ0ZmFiZDYzOTdjZTkzNDJjNDY3MTJlODM4YTQ2ODdlMGVmZTFlYjBiODRjYWFmY2JjOTBkODNj",
+      "id": 9
+    },
+    {
+      "name": "Perfume Legend For Men 100ml",
+      "price": 500,
+      "qtd": 2,
+      "category": "Perfume Masculino",
+      "img": "https://a-static.mlcdn.com.br/450x450/perfume-importado-masculino-legend-for-men-de-jafra-100ml-sabonete-legend-50gr/shecatcamisariaecia/05e6891a27a111ec8bda4201ac185013/8f911ad367ebdd6aa336fdabc31144d0.jpeg",
+      "id": 10
+    },
+    {
+      "name": "Perfume DEFY EAU 100ml",
+      "price": 66.9,
+      "qtd": 2,
+      "category": "Perfume Masculino",
+      "img": "https://cdn.dooca.store/3359/products/0ulvmrdzkta42t56t6zjam77dmnpfmk8zn6g.png?v=1693883879",
+      "id": 11
     }
   ]
 }
