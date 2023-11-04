@@ -17,7 +17,7 @@
     {
       "name": "Iphone 14",
       "price": "1400",
-      "qtd": "2",
+      "qtd": 5,
       "category": "Smartphone",
       "img": "https://s13emagst.akamaized.net/products/48592/48591223/images/res_0a49cd835e308621c4ce9f501418d2a5.jpg",
       "id": 1
@@ -61,14 +61,6 @@
       "category": "Notebook/Computadores",
       "img": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-3i-15in-hero.png?context=bWFzdGVyfHJvb3R8MzM3NTg5fGltYWdlL3BuZ3xoM2MvaDExLzE0MTkxNTE3NDAxMTE4LnBuZ3w4OTg2YTg5YzQ0ZmFiZDYzOTdjZTkzNDJjNDY3MTJlODM4YTQ2ODdlMGVmZTFlYjBiODRjYWFmY2JjOTBkODNj",
       "id": 9
-    },
-    {
-      "name": "Perfume Legend For Men 100ml",
-      "price": 500,
-      "qtd": 2,
-      "category": "Perfume Masculino",
-      "img": "https://a-static.mlcdn.com.br/450x450/perfume-importado-masculino-legend-for-men-de-jafra-100ml-sabonete-legend-50gr/shecatcamisariaecia/05e6891a27a111ec8bda4201ac185013/8f911ad367ebdd6aa336fdabc31144d0.jpeg",
-      "id": 10
     },
     {
       "name": "Perfume DEFY EAU 100ml",
