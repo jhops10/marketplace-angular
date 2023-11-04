@@ -1,0 +1,43 @@
+<div class="container mx-auto mb-5" *ngIf="productData">
+  <h2 class="mt-3 mb-3">{{ productData.name }}</h2>
+  <hr class="border border-success border-1 opacity-50" />
+  <div class="container d-flex">
+    <div class="card" style="width: 18rem">
+      <img [src]="productData.img" [alt]="productData.name" />
+    </div>
+    <div class="details mb-2 mt-2">
+      <h4 class="ms-3 mb-3">Detalhes do Protudo</h4>
+      <p class="ms-3 mb-2">
+        <span>ID: {{ productData.id }}</span>
+      </p>
+      <p class="ms-3 mb-2"><span>Nome:</span> {{ productData.name }}</p>
+      <p class="ms-3 mb-4">
+        <span>Categoria:</span> {{ productData.category }}
+      </p>
+      <h4 class="ms-3 mb-1"><span>Preço:</span> R$ {{ productData.price }}</h4>
+      <div class="ms-3 mt-4">
+        <div class="qtd-container">
+          <button
+            (click)="handleQuantity('min')"
+            type="button"
+            class="btn btn-danger bi bi-dash-circle"
+          ></button>
+          <input
+            type="number"
+            value="{{ handleQtdProduct }}"
+            class="qtd-input"
+          />
+          <button
+            (click)="handleQuantity('plus')"
+            type="button"
+            class="btn btn-secondary bi bi-plus-circle"
+          ></button>
+        </div>
+
+        <button class="btn btn-success bi bi-cart4" type="button">
+          Comprar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

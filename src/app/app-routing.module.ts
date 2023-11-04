@@ -7,6 +7,7 @@ import { AuthGuard } from './auth.guard';
 import { AdicionarProdutosComponent } from './pages/adicionar-produtos/adicionar-produtos.component';
 import { VendedorUpdateProdutoComponent } from './pages/vendedor-update-produto/vendedor-update-produto.component';
 import { SearchComponent } from './components/search/search.component';
+import { DetalhesProdutoComponent } from './pages/detalhes-produto/detalhes-produto.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'search/:query',
     component: SearchComponent,
+  },
+  {
+    path: 'details/:productId',
+    component: DetalhesProdutoComponent,
   },
 ];
 

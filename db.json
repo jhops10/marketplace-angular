@@ -47,9 +47,9 @@
       "id": 7
     },
     {
-      "name": "Belkit NH New Hair",
-      "price": 120,
-      "qtd": 5,
+      "name": "Kit Belkit NH New Hair",
+      "price": "120",
+      "qtd": "5",
       "category": "Estética e Saúde",
       "img": "https://images.tcdn.com.br/img/img_prod/656618/belkit_nh_new_hair_kit_combo_reconstrucao_e_crescimento_capilar_7_produtos_2441_1_8e68872d8660ef9b9ac4763d289d9fa2.jpg",
       "id": 8
@@ -69,6 +69,14 @@
       "category": "Perfume Masculino",
       "img": "https://cdn.dooca.store/3359/products/0ulvmrdzkta42t56t6zjam77dmnpfmk8zn6g.png?v=1693883879",
       "id": 11
+    },
+    {
+      "name": "Headphone Philips com Microfone",
+      "price": "150",
+      "qtd": "2",
+      "category": "Headphone",
+      "img": "https://images.tcdn.com.br/img/img_prod/740836/fone_de_ouvido_headphone_philips_com_microfone_preto_p3_tauh201bk_00_8821_1_7e7e62112f9db6aa9bdae3eb6b50d8fd.jpg",
+      "id": 12
     }
   ]
 }

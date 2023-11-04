@@ -1,0 +1,15 @@
+span {
+  font-weight: 600;
+}
+
+.qtd-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+.qtd-input {
+  max-width: 40px;
+  height: 35px;
+  border-radius: 5px;
+}
