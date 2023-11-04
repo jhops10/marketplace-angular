@@ -34,4 +34,10 @@ export class ProdutosService {
   popularProducts() {
     return this.http.get<Product[]>(`http://localhost:3000/produtos?_limit=3`);
   }
+
+  searchProducts(query: string) {
+    return this.http.get<Product[]>(
+      `http://localhost:3000/produtos?q=${query}`
+    );
+  }
 }

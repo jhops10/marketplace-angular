@@ -52,9 +52,15 @@
           class="form-control me-2"
           type="search"
           placeholder="Pesquisar Produto..."
+          (keyup)="searchProducts($event)"
           aria-label="Search"
         />
         <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        <ul class="suggested-search">
+          <li *ngFor="let item of searchResult">
+            <a>{{ item.name }}</a>
+          </li>
+        </ul>
       </form>
     </div>
   </div>

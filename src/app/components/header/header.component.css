@@ -5,3 +5,27 @@
 .nav-exit {
   cursor: pointer;
 }
+
+
+.suggested-search {
+  position: absolute;
+  top: 46px;
+  z-index: 10;
+  display: list-item !important;
+  border: 1px solid #ddd;
+  background-color:  #fff;
+  width: 208px;
+  border-radius: 4px;
+  list-style: none;
+}
+
+.suggested-search li {
+  padding: 5px;
+  border: 1px solid #ddd;
+  list-style: none;
+}
+
+.suggested-search li a {
+  cursor: pointer;
+  color: green;
+}
