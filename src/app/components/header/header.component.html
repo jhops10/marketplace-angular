@@ -49,20 +49,28 @@
       </div>
       <form *ngIf="menuType === 'default'" class="d-flex" role="search">
         <input
+          #searchInput
           class="form-control me-2"
           type="search"
           placeholder="Pesquisar Produto..."
+          (blur)="hideSearch()"
           (keyup)="searchProducts($event)"
           aria-label="Search"
           list="searchList"
         />
-        <datalist id="searchList">
+        <datalist id="searchList" *ngIf="searchResult">
           <option
             *ngFor="let option of searchResult"
             [value]="option.name"
           ></option>
         </datalist>
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        <button
+          (click)="submitSearch(searchInput.value)"
+          class="btn btn-success"
+          type="submit"
+        >
+          Pesquisar
+        </button>
       </form>
     </div>
   </div>

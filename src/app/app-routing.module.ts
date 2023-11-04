@@ -6,6 +6,7 @@ import { VendedorHomeComponent } from './pages/vendedor-home/vendedor-home.compo
 import { AuthGuard } from './auth.guard';
 import { AdicionarProdutosComponent } from './pages/adicionar-produtos/adicionar-produtos.component';
 import { VendedorUpdateProdutoComponent } from './pages/vendedor-update-produto/vendedor-update-produto.component';
+import { SearchComponent } from './components/search/search.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,10 @@ const routes: Routes = [
     path: 'update-produtos/:id',
     component: VendedorUpdateProdutoComponent,
     canActivate: [AuthGuard],
+  },
+  {
+    path: 'search/:query',
+    component: SearchComponent,
   },
 ];
 

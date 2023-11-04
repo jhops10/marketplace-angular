@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { VendedorHomeComponent } from './pages/vendedor-home/vendedor-home.component';
 import { AdicionarProdutosComponent } from './pages/adicionar-produtos/adicionar-produtos.component';
 import { VendedorUpdateProdutoComponent } from './pages/vendedor-update-produto/vendedor-update-produto.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { VendedorUpdateProdutoComponent } from './pages/vendedor-update-produto/
     VendedorHomeComponent,
     AdicionarProdutosComponent,
     VendedorUpdateProdutoComponent,
+    SearchComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
