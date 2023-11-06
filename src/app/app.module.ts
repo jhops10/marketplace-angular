@@ -13,6 +13,7 @@ import { AdicionarProdutosComponent } from './pages/adicionar-produtos/adicionar
 import { VendedorUpdateProdutoComponent } from './pages/vendedor-update-produto/vendedor-update-produto.component';
 import { SearchComponent } from './components/search/search.component';
 import { DetalhesProdutoComponent } from './pages/detalhes-produto/detalhes-produto.component';
+import { UserAuthComponent } from './pages/user-auth/user-auth.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { DetalhesProdutoComponent } from './pages/detalhes-produto/detalhes-prod
     VendedorUpdateProdutoComponent,
     SearchComponent,
     DetalhesProdutoComponent,
+    UserAuthComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

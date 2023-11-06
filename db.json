@@ -78,5 +78,13 @@
       "img": "https://images.tcdn.com.br/img/img_prod/740836/fone_de_ouvido_headphone_philips_com_microfone_preto_p3_tauh201bk_00_8821_1_7e7e62112f9db6aa9bdae3eb6b50d8fd.jpg",
       "id": 12
     }
+  ],
+  "usuarios": [
+    {
+      "email": "teste@gmail.com",
+      "nome": "User",
+      "password": "123",
+      "id": 1
+    }
   ]
 }
