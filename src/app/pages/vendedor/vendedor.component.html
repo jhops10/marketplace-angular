@@ -40,6 +40,7 @@
 
   <div *ngIf="showLogin" class="signup">
     <h3>Login do Vendedor</h3>
+    <hr class="border border-success border-3 opacity-75" />
     <p class="error-p">{{ authError }}</p>
     <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
       <label class="form-label mt-3" for="email">Email</label>

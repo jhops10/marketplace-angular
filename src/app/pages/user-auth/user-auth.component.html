@@ -1,7 +1,7 @@
 <!-- Formulário de Cadastro -->
 
 <div class="seller-aut col-md-4 mt-5 mx-auto">
-  <div class="signup">
+  <div *ngIf="userShowLogin" class="signup">
     <h3>Cadastrar Usuário</h3>
     <hr class="border border-success border-3 opacity-75" />
     <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)">
@@ -30,18 +30,19 @@
         placeholder="Digite sua senha"
       />
       <button class="btn btn-success mt-3">Registre-se</button>
-      <!-- <button (click)="openLoginOrSignUp()" class="btn btn-light mt-3 ms-3">
-        Já é um Usuário? Clique aqui.
-      </button> -->
+      <button (click)="openLoginOrSignUp()" class="btn btn-light mt-3 ms-3">
+        Já possui Cadastro? Clique aqui.
+      </button>
     </form>
   </div>
 
   <!-- Formulário de Login -->
-  <!--
-  <div *ngIf="showLogin" class="signup">
-    <h3>Login do Vendedor</h3>
-    <p class="error-p">{{ authError }}</p>
-    <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
+
+  <div *ngIf="!userShowLogin" class="signup">
+    <h3>Login do Usuário</h3>
+    <hr class="border border-success border-3 opacity-75" />
+    <!-- <p class="error-p">{{ authError }}</p> -->
+    <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)">
       <label class="form-label mt-3" for="email">Email</label>
       <input
         class="form-control"
@@ -60,9 +61,8 @@
       />
       <button class="btn btn-success mt-3">Login</button>
       <button (click)="openLoginOrSignUp()" class="btn btn-light mt-3 ms-3">
-        Ainda não é um vendedor? Registre-se
+        Não possui Cadastro? Registre-se
       </button>
     </form>
   </div>
-</div> -->
 </div>
