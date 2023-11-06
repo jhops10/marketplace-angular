@@ -41,25 +41,44 @@
   <div *ngIf="!userShowLogin" class="signup">
     <h3>Login do Usuário</h3>
     <hr class="border border-success border-3 opacity-75" />
-    <!-- <p class="error-p">{{ authError }}</p> -->
+
     <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)">
       <label class="form-label mt-3" for="email">Email</label>
       <input
-        class="form-control"
         type="email"
-        ngModel
+        class="form-control"
         name="email"
         placeholder="Digite seu e-mail"
+        ngModel
+        email
+        #email="ngModel"
+        required
       />
+      <p class="error-p">
+        <span *ngIf="email.invalid && email.touched"
+          >Digite um e-mail válido.</span
+        >
+      </p>
       <label class="form-label mt-3" id="senha" for="senha">Senha</label>
       <input
-        class="form-control"
         type="password"
-        ngModel
+        class="form-control"
         name="password"
         placeholder="Digite sua senha"
+        ngModel
+        minlength="2"
+        maxlength="20"
+        #password="ngModel"
+        required
       />
-      <button class="btn btn-success mt-3">Login</button>
+      <p class="error-p">
+        <span *ngIf="password.invalid && password.touched"
+          >Digite uma senha válida</span
+        >
+      </p>
+      <button [disabled]="userLogin.invalid" class="btn btn-success mt-3">
+        Login
+      </button>
       <button (click)="openLoginOrSignUp()" class="btn btn-light mt-3 ms-3">
         Não possui Cadastro? Registre-se
       </button>

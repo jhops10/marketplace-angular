@@ -10,6 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class UserAuthComponent implements OnInit {
   userShowLogin: boolean = false;
+  authError: string = '';
 
   constructor(private service: UserService) {}
 
