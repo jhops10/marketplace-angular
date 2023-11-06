@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   menuType: string = 'default';
   nomeVendedor: string = '';
   searchResult: undefined | Product[];
+  nomeUsuario: string = 'Fabão';
 
   constructor(private route: Router, private service: ProdutosService) {}
 
@@ -24,7 +25,13 @@ export class HeaderComponent implements OnInit {
             let vendedorStore = localStorage.getItem('vendedor');
             let vendedorData = vendedorStore && JSON.parse(vendedorStore)[0];
             this.nomeVendedor = vendedorData.name;
+            this.menuType = 'vendedor';
           }
+        } else if (localStorage.getItem('usuario')) {
+          let userStore = localStorage.getItem('usuario');
+          let userData = userStore && JSON.parse(userStore);
+          this.nomeUsuario = userData.nome;
+          this.menuType = 'usuario';
         } else {
           this.menuType = 'default';
         }
@@ -35,6 +42,11 @@ export class HeaderComponent implements OnInit {
   logout() {
     localStorage.removeItem('vendedor');
     this.route.navigate(['/']);
+  }
+
+  userLogout() {
+    localStorage.removeItem('usuario');
+    this.route.navigate(['/user-auth']);
   }
 
   searchProducts(query: KeyboardEvent) {

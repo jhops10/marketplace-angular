@@ -14,6 +14,7 @@ import { VendedorUpdateProdutoComponent } from './pages/vendedor-update-produto/
 import { SearchComponent } from './components/search/search.component';
 import { DetalhesProdutoComponent } from './pages/detalhes-produto/detalhes-produto.component';
 import { UserAuthComponent } from './pages/user-auth/user-auth.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { UserAuthComponent } from './pages/user-auth/user-auth.component';
     SearchComponent,
     DetalhesProdutoComponent,
     UserAuthComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

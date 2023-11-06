@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-secondary-subtle">
   <div class="container">
     <a class="navbar-brand titulo_principal" routerLink="/"
       >Marketplace - Angular</a
@@ -16,12 +16,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <div [ngSwitch]="menuType" class="collapse navbar-collapse">
+        <!-- Default -->
         <ul *ngSwitchCase="'default'" class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="vendedor">Vendedor</a>
+            <a class="nav-link" routerLink="vendedor">Vendedores</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="user-auth">Login / Cadastrar</a>
@@ -30,6 +31,8 @@
             <a class="nav-link" href="#">Carrinho(0)</a>
           </li>
         </ul>
+
+        <!-- Vendedor -->
         <ul *ngSwitchCase="'vendedor'" class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" routerLink="vendedor-home">Produtos</a>
@@ -46,7 +49,29 @@
             <a class="nav-link" href="#">{{ nomeVendedor | titlecase }}</a>
           </li>
         </ul>
+
+        <!-- Usuario -->
+        <ul *ngSwitchCase="'usuario'" class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="vendedor">Vendedores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="user-auth">{{
+              nomeUsuario | titlecase
+            }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-exit" (click)="userLogout()">Sair</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Carrinho(0)</a>
+          </li>
+        </ul>
       </div>
+
       <form *ngIf="menuType === 'default'" class="d-flex" role="search">
         <input
           #searchInput

@@ -21,4 +21,10 @@ export class UserService {
         }
       });
   }
+
+  userAuthReload() {
+    if (localStorage.getItem('usuario')) {
+      this.route.navigate(['/']);
+    }
+  }
 }
