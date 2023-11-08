@@ -28,7 +28,7 @@
             <a class="nav-link" routerLink="user-auth">Login / Cadastrar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Carrinho(0)</a>
+            <a class="nav-link" href="#">Carrinho({{ cartItems }})</a>
           </li>
         </ul>
 
@@ -67,7 +67,7 @@
             <a class="nav-link nav-exit" (click)="userLogout()">Sair</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Carrinho(0)</a>
+            <a class="nav-link" href="#">Carrinho({{ cartItems }})</a>
           </li>
         </ul>
       </div>

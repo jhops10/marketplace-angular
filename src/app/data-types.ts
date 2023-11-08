@@ -12,7 +12,7 @@ export interface Login {
 export interface Product {
   name: string;
   price: number;
-  qtd: string;
+  qtd: undefined | number;
   category: string;
   img: string;
   id: number;

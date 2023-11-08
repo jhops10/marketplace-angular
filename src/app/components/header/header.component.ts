@@ -12,7 +12,8 @@ export class HeaderComponent implements OnInit {
   menuType: string = 'default';
   nomeVendedor: string = '';
   searchResult: undefined | Product[];
-  nomeUsuario: string = 'Fabão';
+  nomeUsuario: string = '';
+  cartItems: number = 0;
 
   constructor(private route: Router, private service: ProdutosService) {}
 

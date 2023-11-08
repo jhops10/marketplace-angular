@@ -1,6 +1,6 @@
+import { Product } from './../../data-types';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { Product } from 'src/app/data-types';
 import { ProdutosService } from 'src/app/services/produtos.service';
 
 @Component({
@@ -32,6 +32,15 @@ export class DetalhesProdutoComponent implements OnInit {
     } else {
       if (this.handleQtdProduct > 1) {
         this.handleQtdProduct -= 1;
+      }
+    }
+  }
+
+  addToCart() {
+    if (this.productData) {
+      this.productData.qtd = this.qtdProduct;
+      if (!localStorage.getItem('usuario')) {
+        this.service.localAddToCart(this.productData);
       }
     }
   }
