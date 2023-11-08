@@ -24,6 +24,12 @@ export class UserAuthComponent implements OnInit {
 
   login(data: Login) {
     this.service.userLogin(data);
+    this.service.invalidUserAuth.subscribe((result) => {
+      if (result) {
+        this.authError = 'Usuário não Encontrado';
+      } else {
+      }
+    });
   }
 
   openLoginOrSignUp() {

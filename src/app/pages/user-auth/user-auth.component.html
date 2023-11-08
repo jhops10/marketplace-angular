@@ -40,6 +40,7 @@
 
   <div *ngIf="!userShowLogin" class="signup">
     <h3>Login do Usuário</h3>
+    <p class="error-p">{{ authError }}</p>
     <hr class="border border-success border-3 opacity-75" />
 
     <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)">
