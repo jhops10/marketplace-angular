@@ -20,7 +20,7 @@
           <button
             (click)="handleQuantity('min')"
             type="button"
-            class="btn btn-danger bi bi-dash-circle"
+            class="btn btn-secondary bi bi-dash-circle"
           ></button>
           <input
             type="number"
@@ -30,16 +30,25 @@
           <button
             (click)="handleQuantity('plus')"
             type="button"
-            class="btn btn-secondary bi bi-plus-circle"
+            class="btn btn-primary bi bi-plus-circle"
           ></button>
         </div>
 
         <button
+          *ngIf="!removeCart"
           (click)="addToCart()"
           class="btn btn-success bi bi-cart4"
           type="button"
         >
-          Comprar
+          Adicionar ao Carrinho
+        </button>
+        <button
+          *ngIf="removeCart"
+          (click)="removeToCart(productData.id)"
+          class="btn btn-danger bi bi-cart-x"
+          type="button"
+        >
+          Remover do Carrinho
         </button>
       </div>
     </div>

@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { Product } from '../data-types';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProdutosService {
+  cartData = new EventEmitter<Product[] | []>();
   constructor(private http: HttpClient) {}
 
   addProduct(data: Product) {
@@ -50,6 +51,17 @@ export class ProdutosService {
       cartData = JSON.parse(localCart);
       cartData.push(data);
       localStorage.setItem('localCart', JSON.stringify(cartData));
+    }
+    this.cartData.emit(cartData);
+  }
+
+  removeItemFromCart(productId: number) {
+    let cartData = localStorage.getItem('localCart');
+    if (cartData) {
+      let items: Product[] = JSON.parse(cartData);
+      items = items.filter((item: Product) => productId !== item.id);
+      localStorage.setItem('localCart', JSON.stringify(items));
+      this.cartData.emit(items);
     }
   }
 }

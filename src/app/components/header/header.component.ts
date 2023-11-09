@@ -38,6 +38,15 @@ export class HeaderComponent implements OnInit {
         }
       }
     });
+
+    let cartData = localStorage.getItem('localCart');
+    if (cartData) {
+      this.cartItems = JSON.parse(cartData).length;
+    }
+
+    this.service.cartData.subscribe((items) => {
+      this.cartItems = items.length;
+    });
   }
 
   logout() {

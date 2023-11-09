@@ -12,6 +12,7 @@ export class DetalhesProdutoComponent implements OnInit {
   productData: undefined | Product;
   handleQtdProduct: number = 1;
   qtdProduct: number = this.handleQtdProduct;
+  removeCart = false;
 
   constructor(
     private activeRoute: ActivatedRoute,
@@ -23,6 +24,19 @@ export class DetalhesProdutoComponent implements OnInit {
     productId &&
       this.service.getProduct(productId).subscribe((result) => {
         this.productData = result;
+
+        let cartData = localStorage.getItem('localCart');
+        if (productId && cartData) {
+          let items = JSON.parse(cartData);
+          items = items.filter(
+            (item: Product) => productId == item.id.toString()
+          );
+          if (items.length) {
+            this.removeCart = true;
+          } else {
+            this.removeCart = false;
+          }
+        }
       });
   }
 
@@ -41,7 +55,13 @@ export class DetalhesProdutoComponent implements OnInit {
       this.productData.qtd = this.qtdProduct;
       if (!localStorage.getItem('usuario')) {
         this.service.localAddToCart(this.productData);
+        this.removeCart = true;
       }
     }
+  }
+
+  removeToCart(productId: number) {
+    this.service.removeItemFromCart(productId);
+    this.removeCart = false;
   }
 }
