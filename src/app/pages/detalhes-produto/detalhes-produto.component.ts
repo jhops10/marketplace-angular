@@ -1,4 +1,4 @@
-import { Product } from './../../data-types';
+import { Cart, Product } from './../../data-types';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { ProdutosService } from 'src/app/services/produtos.service';
@@ -56,6 +56,20 @@ export class DetalhesProdutoComponent implements OnInit {
       if (!localStorage.getItem('usuario')) {
         this.service.localAddToCart(this.productData);
         this.removeCart = true;
+      } else {
+        let user = localStorage.getItem('usuario');
+        let userId = user && JSON.parse(user).id;
+        let cartData: Cart = {
+          ...this.productData,
+          userId,
+          productId: this.productData.id,
+        };
+        delete cartData.id;
+        this.service.addToCart(cartData).subscribe((result) => {
+          if (result) {
+            alert('Produto Cadastrado com Sucesso');
+          }
+        });
       }
     }
   }

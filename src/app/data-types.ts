@@ -17,3 +17,14 @@ export interface Product {
   img: string;
   id: number;
 }
+
+export interface Cart {
+  name: string;
+  price: number;
+  qtd: undefined | number;
+  category: string;
+  img: string;
+  id: number | undefined;
+  userId: number;
+  productId: number;
+}

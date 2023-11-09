@@ -92,5 +92,17 @@
       "password": "123",
       "id": 2
     }
+  ],
+  "cart": [
+    {
+      "name": "Galaxy AO3s",
+      "price": "950",
+      "qtd": 1,
+      "category": "Smartphone",
+      "img": "https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/24/53/2453_smartphone-samsung-galaxy-a03s-camera-tripla-traseira-tela-infinita-de-6-5-64gb-4gb-ram-octa-core_l1_637733755121353293.jpg",
+      "userId": 2,
+      "productId": 3,
+      "id": 1
+    }
   ]
 }
