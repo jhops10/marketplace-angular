@@ -95,14 +95,24 @@
   ],
   "cart": [
     {
-      "name": "Galaxy AO3s",
-      "price": "950",
+      "name": "Kit Belkit NH New Hair",
+      "price": "120",
       "qtd": 1,
-      "category": "Smartphone",
-      "img": "https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/24/53/2453_smartphone-samsung-galaxy-a03s-camera-tripla-traseira-tela-infinita-de-6-5-64gb-4gb-ram-octa-core_l1_637733755121353293.jpg",
+      "category": "Estética e Saúde",
+      "img": "https://images.tcdn.com.br/img/img_prod/656618/belkit_nh_new_hair_kit_combo_reconstrucao_e_crescimento_capilar_7_produtos_2441_1_8e68872d8660ef9b9ac4763d289d9fa2.jpg",
       "userId": 2,
-      "productId": 3,
+      "productId": 8,
       "id": 1
+    },
+    {
+      "name": "Headphone Philips com Microfone",
+      "price": "150",
+      "qtd": 1,
+      "category": "Headphone",
+      "img": "https://images.tcdn.com.br/img/img_prod/740836/fone_de_ouvido_headphone_philips_com_microfone_preto_p3_tauh201bk_00_8821_1_7e7e62112f9db6aa9bdae3eb6b50d8fd.jpg",
+      "userId": 2,
+      "productId": 12,
+      "id": 2
     }
   ]
 }

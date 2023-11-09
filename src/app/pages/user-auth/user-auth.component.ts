@@ -1,6 +1,7 @@
-import { Login } from './../../data-types';
+import { Cart, Login, Product } from './../../data-types';
 import { Component, OnInit } from '@angular/core';
 import { SignUp } from 'src/app/data-types';
+import { ProdutosService } from 'src/app/services/produtos.service';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -12,7 +13,10 @@ export class UserAuthComponent implements OnInit {
   userShowLogin: boolean = false;
   authError: string = '';
 
-  constructor(private service: UserService) {}
+  constructor(
+    private service: UserService,
+    private productService: ProdutosService
+  ) {}
 
   ngOnInit(): void {
     this.service.userAuthReload();
@@ -28,11 +32,40 @@ export class UserAuthComponent implements OnInit {
       if (result) {
         this.authError = 'Usuário não Encontrado';
       } else {
+        this.localCartToRemoveCart();
       }
     });
   }
 
   openLoginOrSignUp() {
     this.userShowLogin = !this.userShowLogin;
+  }
+
+  localCartToRemoveCart() {
+    let data = localStorage.getItem('localCart');
+    if (data) {
+      let cartDataList: Product[] = JSON.parse(data);
+      let user = localStorage.getItem('usuario');
+      let userId = user && JSON.parse(user).id;
+
+      cartDataList.forEach((product: Product, index) => {
+        let cartData: Cart = {
+          ...product,
+          productId: product.id,
+          userId,
+        };
+        delete cartData.id;
+        setTimeout(() => {
+          this.productService.addToCart(cartData).subscribe((result) => {
+            if (result) {
+              console.log('Dados Salvos no Banco de Dados');
+            }
+          });
+          if (cartDataList.length === index + 1) {
+            localStorage.removeItem('localCart');
+          }
+        }, 500);
+      });
+    }
   }
 }
