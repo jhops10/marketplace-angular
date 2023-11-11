@@ -43,10 +43,10 @@ export class UserAuthComponent implements OnInit {
 
   localCartToRemoveCart() {
     let data = localStorage.getItem('localCart');
+    let user = localStorage.getItem('usuario');
+    let userId = user && JSON.parse(user).id;
     if (data) {
       let cartDataList: Product[] = JSON.parse(data);
-      let user = localStorage.getItem('usuario');
-      let userId = user && JSON.parse(user).id;
 
       cartDataList.forEach((product: Product, index) => {
         let cartData: Cart = {
@@ -61,11 +61,14 @@ export class UserAuthComponent implements OnInit {
               console.log('Dados Salvos no Banco de Dados');
             }
           });
-          if (cartDataList.length === index + 1) {
-            localStorage.removeItem('localCart');
-          }
         }, 500);
+        if (cartDataList.length === index + 1) {
+          localStorage.removeItem('localCart');
+        }
       });
     }
+    setTimeout(() => {
+      this.productService.getCartList(userId);
+    }, 2000);
   }
 }
