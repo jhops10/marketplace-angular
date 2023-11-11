@@ -71,7 +71,7 @@ export class ProdutosService {
 
   getCartList(userId: number) {
     return this.http
-      .get<Product[]>('https://localhost:300/cart?userId=' + userId, {
+      .get<Product[]>('http://localhost:3000/cart?userId=' + userId, {
         observe: 'response',
       })
       .subscribe((result) => {

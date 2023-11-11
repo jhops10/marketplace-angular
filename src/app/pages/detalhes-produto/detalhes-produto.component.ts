@@ -29,7 +29,7 @@ export class DetalhesProdutoComponent implements OnInit {
         if (productId && cartData) {
           let items = JSON.parse(cartData);
           items = items.filter(
-            (item: Product) => productId == item.id.toString()
+            (item: Product) => productId === item.id.toString()
           );
           if (items.length) {
             this.removeCart = true;
@@ -58,7 +58,7 @@ export class DetalhesProdutoComponent implements OnInit {
     if (action == 'plus') {
       this.handleQtdProduct += 1;
     } else {
-      if (this.handleQtdProduct > 1) {
+      if (this.handleQtdProduct > 1 && action === 'min') {
         this.handleQtdProduct -= 1;
       }
     }
