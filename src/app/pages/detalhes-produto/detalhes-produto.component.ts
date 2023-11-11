@@ -37,6 +37,20 @@ export class DetalhesProdutoComponent implements OnInit {
             this.removeCart = false;
           }
         }
+        let user = localStorage.getItem('usuario');
+        if (user) {
+          let userId = user && JSON.parse(user).id;
+          this.service.getCartList(userId);
+          this.service.cartData.subscribe((result) => {
+            let item = result.filter(
+              (item: Product) =>
+                productId?.toString() === item.productId?.toString()
+            );
+            if (item.length) {
+              this.removeCart = true;
+            }
+          });
+        }
       });
   }
 
@@ -67,7 +81,8 @@ export class DetalhesProdutoComponent implements OnInit {
         delete cartData.id;
         this.service.addToCart(cartData).subscribe((result) => {
           if (result) {
-            alert('Produto Cadastrado com Sucesso');
+            this.service.getCartList(userId);
+            this.removeCart = true;
           }
         });
       }
