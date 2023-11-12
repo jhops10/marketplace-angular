@@ -15,6 +15,7 @@ import { SearchComponent } from './components/search/search.component';
 import { DetalhesProdutoComponent } from './pages/detalhes-produto/detalhes-produto.component';
 import { UserAuthComponent } from './pages/user-auth/user-auth.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FooterComponent } from './components/footer/footer.component';
     DetalhesProdutoComponent,
     UserAuthComponent,
     FooterComponent,
+    CartPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
