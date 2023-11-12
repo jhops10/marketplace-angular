@@ -5,12 +5,6 @@
       "password": "1234",
       "email": "joaowais@gmail.com",
       "id": 1
-    },
-    {
-      "email": "mouraaudio@gmail.com",
-      "nome": "julin",
-      "password": "88nn7aiv",
-      "id": 2
     }
   ],
   "produtos": [
@@ -89,64 +83,24 @@
   ],
   "cart": [
     {
-      "name": "Galaxy AO3s",
-      "price": "950",
+      "name": "Iphone 14",
+      "price": "1400",
       "qtd": 1,
       "category": "Smartphone",
-      "img": "https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/24/53/2453_smartphone-samsung-galaxy-a03s-camera-tripla-traseira-tela-infinita-de-6-5-64gb-4gb-ram-octa-core_l1_637733755121353293.jpg",
+      "img": "https://s13emagst.akamaized.net/products/48592/48591223/images/res_0a49cd835e308621c4ce9f501418d2a5.jpg",
       "userId": 1,
-      "productId": 3,
+      "productId": 1,
       "id": 1
     },
     {
-      "name": "Galaxy AO3s",
-      "price": "950",
+      "name": "Perfume DEFY EAU 100ml",
+      "price": 66.9,
       "qtd": 1,
-      "category": "Smartphone",
-      "img": "https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/24/53/2453_smartphone-samsung-galaxy-a03s-camera-tripla-traseira-tela-infinita-de-6-5-64gb-4gb-ram-octa-core_l1_637733755121353293.jpg",
+      "category": "Perfume Masculino",
+      "img": "https://cdn.dooca.store/3359/products/0ulvmrdzkta42t56t6zjam77dmnpfmk8zn6g.png?v=1693883879",
       "userId": 1,
-      "productId": 3,
+      "productId": 11,
       "id": 2
-    },
-    {
-      "name": "Galaxy AO3s",
-      "price": "950",
-      "qtd": 1,
-      "category": "Smartphone",
-      "img": "https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/24/53/2453_smartphone-samsung-galaxy-a03s-camera-tripla-traseira-tela-infinita-de-6-5-64gb-4gb-ram-octa-core_l1_637733755121353293.jpg",
-      "userId": 1,
-      "productId": 3,
-      "id": 3
-    },
-    {
-      "name": "Galaxy AO3s",
-      "price": "950",
-      "qtd": 1,
-      "category": "Smartphone",
-      "img": "https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/24/53/2453_smartphone-samsung-galaxy-a03s-camera-tripla-traseira-tela-infinita-de-6-5-64gb-4gb-ram-octa-core_l1_637733755121353293.jpg",
-      "userId": 1,
-      "productId": 3,
-      "id": 4
-    },
-    {
-      "name": "Galaxy AO3s",
-      "price": "950",
-      "qtd": 1,
-      "category": "Smartphone",
-      "img": "https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/24/53/2453_smartphone-samsung-galaxy-a03s-camera-tripla-traseira-tela-infinita-de-6-5-64gb-4gb-ram-octa-core_l1_637733755121353293.jpg",
-      "userId": 1,
-      "productId": 3,
-      "id": 5
-    },
-    {
-      "name": "Galaxy AO3s",
-      "price": "950",
-      "qtd": 1,
-      "category": "Smartphone",
-      "img": "https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/24/53/2453_smartphone-samsung-galaxy-a03s-camera-tripla-traseira-tela-infinita-de-6-5-64gb-4gb-ram-octa-core_l1_637733755121353293.jpg",
-      "userId": 1,
-      "productId": 3,
-      "id": 6
     }
   ]
 }
