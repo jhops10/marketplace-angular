@@ -83,44 +83,25 @@
   ],
   "cart": [
     {
-      "name": "Kit Belkit NH New Hair",
-      "price": "120",
+      "name": "Headphone Philips com Microfone",
+      "price": "150",
       "qtd": 1,
-      "category": "Estética e Saúde",
-      "img": "https://images.tcdn.com.br/img/img_prod/656618/belkit_nh_new_hair_kit_combo_reconstrucao_e_crescimento_capilar_7_produtos_2441_1_8e68872d8660ef9b9ac4763d289d9fa2.jpg",
+      "category": "Headphone",
+      "img": "https://images.tcdn.com.br/img/img_prod/740836/fone_de_ouvido_headphone_philips_com_microfone_preto_p3_tauh201bk_00_8821_1_7e7e62112f9db6aa9bdae3eb6b50d8fd.jpg",
       "userId": 1,
-      "productId": 8,
-      "id": 4
+      "productId": 12,
+      "id": 1
     },
     {
-      "name": "Galaxy AO3s",
-      "price": "950",
+      "name": "Galaxy Watch 4",
+      "price": 850,
       "qtd": 1,
-      "category": "Smartphone",
-      "img": "https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/24/53/2453_smartphone-samsung-galaxy-a03s-camera-tripla-traseira-tela-infinita-de-6-5-64gb-4gb-ram-octa-core_l1_637733755121353293.jpg",
+      "category": "Smartwatch",
+      "img": "https://a-static.mlcdn.com.br/450x450/smartwatch-samsung-galaxy-watch-4-40mm-bluetooth-preto-sm-r860nzkpzto/kabum/206623/177f2b6c797200d0772e9014da8f938c.jpeg",
       "userId": 1,
-      "productId": 3,
-      "id": 5
-    },
-    {
-      "name": "Galaxy Tab S6 Lite",
-      "price": 1100,
-      "qtd": 1,
-      "category": "Tablet",
-      "img": "https://lojaibyte.vteximg.com.br/arquivos/ids/204992-1200-1200/tablet-samsung-galaxy-tab-s6-lite-p615-64gb-tela-10-4-4g-wi-fi-caneta-s-pen-camera-traseira-8mp-frontal-8mp-cinza-42036-1.jpg?v=637354329247700000",
-      "userId": 1,
-      "productId": 4,
-      "id": 6
-    },
-    {
-      "name": "Iphone 14",
-      "price": "1400",
-      "qtd": 1,
-      "category": "Smartphone",
-      "img": "https://s13emagst.akamaized.net/products/48592/48591223/images/res_0a49cd835e308621c4ce9f501418d2a5.jpg",
-      "userId": 1,
-      "productId": 1,
-      "id": 7
+      "productId": 7,
+      "id": 2
     }
-  ]
+  ],
+  "orders": []
 }

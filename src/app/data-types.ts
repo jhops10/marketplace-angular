@@ -34,3 +34,12 @@ export interface PriceSummary {
   price: number;
   total: number;
 }
+
+export interface Order {
+  endereco: string;
+  numero: string;
+  cep: string;
+  bairro: string;
+  totalPrice: number;
+  userId: number;
+}

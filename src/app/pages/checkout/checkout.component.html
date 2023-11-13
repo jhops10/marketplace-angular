@@ -1,0 +1,50 @@
+<div class="seller-aut col-md-4 mt-5 mx-auto">
+  <div class="signup">
+    <h3>Dados para Entrega</h3>
+    <hr class="border border-success border-3 opacity-75" />
+    <form #orderData="ngForm" (ngSubmit)="orderNow(orderData.value)">
+      <label class="form-label mt-3" for="endereco">Endereço</label>
+      <input
+        class="form-control"
+        type="text"
+        ngModel
+        name="endereco"
+        placeholder="Digite seu endereço"
+      />
+      <label class="form-label mt-3" for="numero">Numero</label>
+      <input
+        class="form-control"
+        type="text"
+        ngModel
+        name="numero"
+        placeholder="Digite o número da residência"
+      />
+      <label class="form-label mt-3" for="cep">CEP</label>
+      <input
+        class="form-control"
+        type="text"
+        ngModel
+        name="cep"
+        placeholder="Digite o CEP"
+      />
+      <label class="form-label mt-3" for="bairro">Bairro</label>
+      <input
+        class="form-control"
+        type="text"
+        ngModel
+        name="bairro"
+        placeholder="Digite o Bairro"
+      />
+      <div class="card mt-5 mb-4">
+        <div class="card-header">Total</div>
+        <div class="card-body">
+          <p class="card-text mb-2">Valor da Compra:</p>
+          <h3 class="card-title mb-3">R$ {{ totalPrice }}</h3>
+        </div>
+      </div>
+      <button class="btn btn-success">
+        <i class="bi bi-bag-check-fill"></i> Finalizar Pedido
+      </button>
+    </form>
+  </div>
+</div>

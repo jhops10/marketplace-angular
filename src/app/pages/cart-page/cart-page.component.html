@@ -34,8 +34,8 @@
   <div class="card-body">
     <p class="card-text mb-2">O seu carrinho tem o valor total de:</p>
     <h3 class="card-title mb-3">R$ {{ priceSummary.total }}</h3>
-    <a href="#" class="btn btn-success"
-      ><i class="bi bi-bag-check-fill"></i> Finalizar Pedido</a
-    >
+    <button (click)="checkout()" class="btn btn-success">
+      <i class="bi bi-bag-check-fill"></i> Finalizar Pedido
+    </button>
   </div>
 </div>

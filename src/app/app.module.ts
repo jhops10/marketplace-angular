@@ -16,6 +16,7 @@ import { DetalhesProdutoComponent } from './pages/detalhes-produto/detalhes-prod
 import { UserAuthComponent } from './pages/user-auth/user-auth.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CartPageComponent } from './pages/cart-page/cart-page.component';
     UserAuthComponent,
     FooterComponent,
     CartPageComponent,
+    CheckoutComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

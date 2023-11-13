@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Cart, PriceSummary } from 'src/app/data-types';
 import { ProdutosService } from 'src/app/services/produtos.service';
 
@@ -14,7 +15,10 @@ export class CartPageComponent implements OnInit {
     total: 0,
   };
 
-  constructor(private productService: ProdutosService) {}
+  constructor(
+    private productService: ProdutosService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.productService.currentCart().subscribe((result) => {
@@ -32,5 +36,9 @@ export class CartPageComponent implements OnInit {
 
   deleteProduct() {
     console.log('deletou');
+  }
+
+  checkout() {
+    this.router.navigate(['/checkout']);
   }
 }
