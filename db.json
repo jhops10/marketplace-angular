@@ -83,6 +83,36 @@
   ],
   "cart": [
     {
+      "name": "Kit Belkit NH New Hair",
+      "price": "120",
+      "qtd": 1,
+      "category": "Estética e Saúde",
+      "img": "https://images.tcdn.com.br/img/img_prod/656618/belkit_nh_new_hair_kit_combo_reconstrucao_e_crescimento_capilar_7_produtos_2441_1_8e68872d8660ef9b9ac4763d289d9fa2.jpg",
+      "userId": 1,
+      "productId": 8,
+      "id": 4
+    },
+    {
+      "name": "Galaxy AO3s",
+      "price": "950",
+      "qtd": 1,
+      "category": "Smartphone",
+      "img": "https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/24/53/2453_smartphone-samsung-galaxy-a03s-camera-tripla-traseira-tela-infinita-de-6-5-64gb-4gb-ram-octa-core_l1_637733755121353293.jpg",
+      "userId": 1,
+      "productId": 3,
+      "id": 5
+    },
+    {
+      "name": "Galaxy Tab S6 Lite",
+      "price": 1100,
+      "qtd": 1,
+      "category": "Tablet",
+      "img": "https://lojaibyte.vteximg.com.br/arquivos/ids/204992-1200-1200/tablet-samsung-galaxy-tab-s6-lite-p615-64gb-tela-10-4-4g-wi-fi-caneta-s-pen-camera-traseira-8mp-frontal-8mp-cinza-42036-1.jpg?v=637354329247700000",
+      "userId": 1,
+      "productId": 4,
+      "id": 6
+    },
+    {
       "name": "Iphone 14",
       "price": "1400",
       "qtd": 1,
@@ -90,17 +120,7 @@
       "img": "https://s13emagst.akamaized.net/products/48592/48591223/images/res_0a49cd835e308621c4ce9f501418d2a5.jpg",
       "userId": 1,
       "productId": 1,
-      "id": 1
-    },
-    {
-      "name": "Perfume DEFY EAU 100ml",
-      "price": 66.9,
-      "qtd": 1,
-      "category": "Perfume Masculino",
-      "img": "https://cdn.dooca.store/3359/products/0ulvmrdzkta42t56t6zjam77dmnpfmk8zn6g.png?v=1693883879",
-      "userId": 1,
-      "productId": 11,
-      "id": 2
+      "id": 7
     }
   ]
 }

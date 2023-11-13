@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from 'src/app/data-types';
+import { Cart, PriceSummary } from 'src/app/data-types';
 import { ProdutosService } from 'src/app/services/produtos.service';
 
 @Component({
@@ -8,16 +8,29 @@ import { ProdutosService } from 'src/app/services/produtos.service';
   styleUrls: ['./cart-page.component.css'],
 })
 export class CartPageComponent implements OnInit {
-  productList: Product[] | undefined;
+  cartData: Cart[] | undefined;
+  priceSummary: PriceSummary = {
+    price: 0,
+    total: 0,
+  };
 
   constructor(private productService: ProdutosService) {}
+
   ngOnInit(): void {
-    this.productService.productList().subscribe((result) => {
-      this.productList = result;
+    this.productService.currentCart().subscribe((result) => {
+      this.cartData = result;
+      let price = 0;
+      result.forEach((item) => {
+        if (item.qtd) {
+          price += item.price * item.qtd;
+        }
+      });
+      this.priceSummary.price = price;
+      this.priceSummary.total += price;
     });
   }
 
-  deleteProduct(id: number) {
+  deleteProduct() {
     console.log('deletou');
   }
 }

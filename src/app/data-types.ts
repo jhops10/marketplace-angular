@@ -29,3 +29,8 @@ export interface Cart {
   userId: number;
   productId: number;
 }
+
+export interface PriceSummary {
+  price: number;
+  total: number;
+}

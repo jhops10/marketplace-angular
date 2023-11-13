@@ -85,4 +85,12 @@ export class ProdutosService {
   removeToCart(cartId: number) {
     return this.http.delete(`http://localhost:3000/cart/` + cartId);
   }
+
+  currentCart() {
+    let userStore = localStorage.getItem('usuario');
+    let userData = userStore && JSON.parse(userStore);
+    return this.http.get<Cart[]>(
+      `http://localhost:3000/cart?userId=` + userData.id
+    );
+  }
 }
