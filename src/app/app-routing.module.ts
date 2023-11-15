@@ -11,6 +11,7 @@ import { DetalhesProdutoComponent } from './pages/detalhes-produto/detalhes-prod
 import { UserAuthComponent } from './pages/user-auth/user-auth.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { MyOrdersComponent } from './pages/my-orders/my-orders.component';
 
 const routes: Routes = [
   {
@@ -55,6 +56,10 @@ const routes: Routes = [
   {
     path: 'checkout',
     component: CheckoutComponent,
+  },
+  {
+    path: 'my-orders',
+    component: MyOrdersComponent,
   },
 ];
 

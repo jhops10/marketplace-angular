@@ -103,5 +103,15 @@
       "id": 2
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "endereco": "Rua Padre Francisco Culturato",
+      "numero": "1036",
+      "cep": "14820-460",
+      "bairro": "Vila Cerqueira",
+      "totalPrice": 1000,
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }
