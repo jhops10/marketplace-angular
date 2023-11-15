@@ -10,10 +10,10 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>#0001</td>
-        <td>R$ 500</td>
-        <td>Em Processo</td>
+      <tr *ngFor="let order of orderData">
+        <td>#{{ order.id }}</td>
+        <td>R$ {{ order.totalPrice }}</td>
+        <td>Em Separação</td>
         <td>
           <button type="button" class="btn btn-danger">
             <i class="bi bi-trash3-fill"></i>

@@ -81,37 +81,25 @@
       "id": 1
     }
   ],
-  "cart": [
-    {
-      "name": "Headphone Philips com Microfone",
-      "price": "150",
-      "qtd": 1,
-      "category": "Headphone",
-      "img": "https://images.tcdn.com.br/img/img_prod/740836/fone_de_ouvido_headphone_philips_com_microfone_preto_p3_tauh201bk_00_8821_1_7e7e62112f9db6aa9bdae3eb6b50d8fd.jpg",
-      "userId": 1,
-      "productId": 12,
-      "id": 1
-    },
-    {
-      "name": "Galaxy Watch 4",
-      "price": 850,
-      "qtd": 1,
-      "category": "Smartwatch",
-      "img": "https://a-static.mlcdn.com.br/450x450/smartwatch-samsung-galaxy-watch-4-40mm-bluetooth-preto-sm-r860nzkpzto/kabum/206623/177f2b6c797200d0772e9014da8f938c.jpeg",
-      "userId": 1,
-      "productId": 7,
-      "id": 2
-    }
-  ],
+  "cart": [],
   "orders": [
     {
       "endereco": "Rua Padre Francisco Culturato",
       "numero": "1036",
       "cep": "14820-460",
       "bairro": "Vila Cerqueira",
-      "totalPrice": 1000,
+      "totalPrice": 1400,
       "userId": 1,
       "id": 1
+    },
+    {
+      "endereco": "Rua Santo Antônio",
+      "numero": "235",
+      "cep": "14820-000",
+      "bairro": "Vila das Flores",
+      "totalPrice": 1120,
+      "userId": 1,
+      "id": 2
     }
   ]
 }

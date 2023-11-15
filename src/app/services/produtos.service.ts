@@ -97,4 +97,22 @@ export class ProdutosService {
   orderNow(data: Order) {
     return this.http.post(`http://localhost:3000/orders`, data);
   }
+
+  orderList() {
+    let userStore = localStorage.getItem('usuario');
+    let userData = userStore && JSON.parse(userStore);
+    return this.http.get<Order[]>(
+      `http://localhost:3000/orders?userId=` + userData.id
+    );
+  }
+
+  deleteCartItems(cartId: number) {
+    return this.http
+      .delete(`http://localhost:3000/cart/` + cartId, { observe: 'response' })
+      .subscribe((result) => {
+        if (result) {
+          this.cartData.emit([]);
+        }
+      });
+  }
 }

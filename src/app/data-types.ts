@@ -42,4 +42,5 @@ export interface Order {
   bairro: string;
   totalPrice: number;
   userId: number;
+  id: number | undefined;
 }

@@ -2,6 +2,7 @@
   <div class="signup">
     <h3>Dados para Entrega</h3>
     <hr class="border border-success border-3 opacity-75" />
+    <p class="message-p">{{ orderMsg }}</p>
     <form #orderData="ngForm" (ngSubmit)="orderNow(orderData.value)">
       <label class="form-label mt-3" for="endereco">Endereço</label>
       <input
