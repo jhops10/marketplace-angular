@@ -95,14 +95,11 @@ export class DetalhesProdutoComponent implements OnInit {
     if (!localStorage.getItem('usuario')) {
       this.service.removeItemFromCart(productId);
     } else {
-      let user = localStorage.getItem('usuario');
-      let userId = user && JSON.parse(user).id;
-
       this.cartData &&
         this.service.removeToCart(this.cartData.id).subscribe((result) => {
-          if (result) {
-            this.service.getCartList(userId);
-          }
+          let user = localStorage.getItem('usuario');
+          let userId = user && JSON.parse(user).id;
+          this.service.getCartList(userId);
         });
       this.removeCart = false;
     }

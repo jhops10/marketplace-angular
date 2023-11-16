@@ -81,6 +81,17 @@
       "id": 1
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "name": "Galaxy Watch 4",
+      "price": 850,
+      "qtd": 1,
+      "category": "Smartwatch",
+      "img": "https://a-static.mlcdn.com.br/450x450/smartwatch-samsung-galaxy-watch-4-40mm-bluetooth-preto-sm-r860nzkpzto/kabum/206623/177f2b6c797200d0772e9014da8f938c.jpeg",
+      "userId": 1,
+      "productId": 7,
+      "id": 2
+    }
+  ],
   "orders": []
 }

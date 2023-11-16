@@ -43,10 +43,10 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-exit" (click)="logout()">Sair</a>
+            <a class="nav-link" href="#">{{ nomeVendedor | titlecase }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">{{ nomeVendedor | titlecase }}</a>
+            <a class="nav-link nav-exit" (click)="logout()">Sair</a>
           </li>
         </ul>
 
@@ -58,18 +58,17 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="vendedor">Vendedores</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" routerLink="user-auth">{{
-              nomeUsuario | titlecase
-            }}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-exit" (click)="userLogout()">Sair</a>
+            <a class="nav-link" routerLink="my-orders">Meus Pedidos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="cart-page"
               >Carrinho({{ cartItems }})</a
             >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-exit" (click)="userLogout()">Sair</a>
           </li>
         </ul>
       </div>

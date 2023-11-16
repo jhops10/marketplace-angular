@@ -21,6 +21,18 @@ export class CartPageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.loadDetails();
+  }
+
+  deleteProduct(cartId: number | undefined) {
+    this.cartData &&
+      cartId &&
+      this.productService.removeToCart(cartId).subscribe((result) => {
+        this.loadDetails();
+      });
+  }
+
+  loadDetails() {
     this.productService.currentCart().subscribe((result) => {
       this.cartData = result;
       let price = 0;
@@ -31,11 +43,11 @@ export class CartPageComponent implements OnInit {
       });
       this.priceSummary.price = price;
       this.priceSummary.total += price;
-    });
-  }
 
-  deleteProduct() {
-    console.log('deletou');
+      if (!this.cartData.length) {
+        this.router.navigate(['/']);
+      }
+    });
   }
 
   checkout() {
