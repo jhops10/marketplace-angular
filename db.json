@@ -9,11 +9,11 @@
   ],
   "produtos": [
     {
-      "name": "Playstation 5 Standard Edition",
-      "price": 3800,
+      "name": "PlayStation 5 Bundle Marvel’s Spider-Man 2",
+      "price": "3800",
       "qtd": "2",
-      "category": "Console",
-      "img": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/409778/Console-Playstation-5-Standard-Edition-825GB-Controle-Dualsense-Sem-Fio-Branco_1699971492_gg.jpg",
+      "category": "Console PS5",
+      "img": "https://uploads.jovemnerd.com.br/wp-content/uploads/2023/08/ps5_dia_do_gamer_ofertas_nerdbunker__z2f8kui08.webp",
       "id": 14
     },
     {
@@ -145,6 +145,85 @@
       "id": 1
     }
   ],
-  "cart": [],
-  "orders": []
+  "cart": [
+    {
+      "name": "Xbox Series X",
+      "price": 4300,
+      "qtd": 1,
+      "category": "Console",
+      "img": "https://m.media-amazon.com/images/I/61eYoSqkHnL._AC_SX679_.jpg",
+      "productId": 15,
+      "userId": null,
+      "id": 1
+    },
+    {
+      "name": "PlayStation 5 Bundle Marvel’s Spider-Man 2",
+      "price": "3800",
+      "qtd": 1,
+      "category": "Console PS5",
+      "img": "https://uploads.jovemnerd.com.br/wp-content/uploads/2023/08/ps5_dia_do_gamer_ofertas_nerdbunker__z2f8kui08.webp",
+      "userId": 1,
+      "productId": 14,
+      "id": 2
+    },
+    {
+      "name": "Hogwarts Legacy Deluxe Edition",
+      "price": 260,
+      "qtd": 1,
+      "category": "Jogo PS5",
+      "img": "https://img.terabyteshop.com.br/produto/g/jogo-hogwarts-legacy-deluxe-edition-ps5_172850.jpg",
+      "userId": 1,
+      "productId": 16,
+      "id": 3
+    },
+    {
+      "name": "EA SPORTS FC 24",
+      "price": 230,
+      "qtd": 1,
+      "category": "Jogo PS5",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2023/08/produto/3805/ea-sports-fc-24-ps5-a.jpg?ims=600x600",
+      "userId": 1,
+      "productId": 18,
+      "id": 4
+    },
+    {
+      "name": "Spider-Man 2",
+      "price": 140,
+      "qtd": 1,
+      "category": "Jogo PS5",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2023/10/produto/4038/jogo-spider-man-2-ps5-a.jpg?ims=600x600",
+      "userId": 1,
+      "productId": 20,
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "endereco": "Rua das Flores",
+      "numero": "1050",
+      "cep": "14820-000",
+      "bairro": "Vila das Neves",
+      "totalPrice": 4505,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "endereco": "Rua das Bromélias",
+      "numero": "55",
+      "cep": "08520-000",
+      "bairro": "Vila das Flores",
+      "totalPrice": 4290,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "endereco": "Rua das Flores",
+      "numero": "1036",
+      "cep": "14820-000",
+      "bairro": "Vila dos Ipês",
+      "totalPrice": 470,
+      "userId": 1,
+      "id": 3
+    }
+  ]
 }
