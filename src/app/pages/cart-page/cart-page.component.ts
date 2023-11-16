@@ -25,8 +25,8 @@ export class CartPageComponent implements OnInit {
   }
 
   deleteProduct(cartId: number | undefined) {
-    this.cartData &&
-      cartId &&
+    cartId &&
+      this.cartData &&
       this.productService.removeToCart(cartId).subscribe((result) => {
         this.loadDetails();
       });
