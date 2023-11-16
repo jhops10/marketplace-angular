@@ -17,4 +17,17 @@ export class MyOrdersComponent implements OnInit {
       this.orderData = result;
     });
   }
+
+  cancelOrder(orderId: number | undefined) {
+    orderId &&
+      this.productService.cancelOrder(orderId).subscribe((result) => {
+        this.getOrderList();
+      });
+  }
+
+  getOrderList() {
+    this.productService.orderList().subscribe((result) => {
+      this.orderData = result;
+    });
+  }
 }
