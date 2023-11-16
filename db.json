@@ -1,82 +1,146 @@
 {
   "vendedores": [
     {
-      "name": "Joao",
-      "password": "1234",
-      "email": "joaowais@gmail.com",
+      "email": "vendedor@vendedor.com.br",
+      "nome": "Vendedor Teste",
+      "password": "123",
       "id": 1
     }
   ],
   "produtos": [
     {
-      "name": "Iphone 14",
-      "price": "1400",
-      "qtd": 5,
-      "category": "Smartphone",
-      "img": "https://s13emagst.akamaized.net/products/48592/48591223/images/res_0a49cd835e308621c4ce9f501418d2a5.jpg",
-      "id": 1
-    },
-    {
-      "name": "Galaxy AO3s",
-      "price": "950",
+      "name": "Playstation 5 Standard Edition",
+      "price": 3800,
       "qtd": "2",
-      "category": "Smartphone",
-      "img": "https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/24/53/2453_smartphone-samsung-galaxy-a03s-camera-tripla-traseira-tela-infinita-de-6-5-64gb-4gb-ram-octa-core_l1_637733755121353293.jpg",
-      "id": 3
+      "category": "Console",
+      "img": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/409778/Console-Playstation-5-Standard-Edition-825GB-Controle-Dualsense-Sem-Fio-Branco_1699971492_gg.jpg",
+      "id": 14
     },
     {
-      "name": "Galaxy Tab S6 Lite",
-      "price": 1100,
+      "name": "Xbox Series X",
+      "price": 4300,
+      "qtd": "2",
+      "category": "Console",
+      "img": "https://m.media-amazon.com/images/I/61eYoSqkHnL._AC_SX679_.jpg",
+      "id": 15
+    },
+    {
+      "name": "Hogwarts Legacy Deluxe Edition",
+      "price": 260,
+      "qtd": 2,
+      "category": "Jogo PS5",
+      "img": "https://img.terabyteshop.com.br/produto/g/jogo-hogwarts-legacy-deluxe-edition-ps5_172850.jpg",
+      "id": 16
+    },
+    {
+      "name": "Final Fantasy XVI",
+      "price": 180,
       "qtd": 3,
-      "category": "Tablet",
-      "img": "https://lojaibyte.vteximg.com.br/arquivos/ids/204992-1200-1200/tablet-samsung-galaxy-tab-s6-lite-p615-64gb-tela-10-4-4g-wi-fi-caneta-s-pen-camera-traseira-8mp-frontal-8mp-cinza-42036-1.jpg?v=637354329247700000",
-      "id": 4
+      "category": "Jogo PS5",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2023/06/produto/3478/jogo-final-fantasy-xvi-ps5-a.jpg?ims=600x600",
+      "id": 17
     },
     {
-      "name": "Galaxy Watch 4",
-      "price": 850,
-      "qtd": 2,
-      "category": "Smartwatch",
-      "img": "https://a-static.mlcdn.com.br/450x450/smartwatch-samsung-galaxy-watch-4-40mm-bluetooth-preto-sm-r860nzkpzto/kabum/206623/177f2b6c797200d0772e9014da8f938c.jpeg",
-      "id": 7
-    },
-    {
-      "name": "Kit Belkit NH New Hair",
-      "price": "120",
-      "qtd": "5",
-      "category": "Estética e Saúde",
-      "img": "https://images.tcdn.com.br/img/img_prod/656618/belkit_nh_new_hair_kit_combo_reconstrucao_e_crescimento_capilar_7_produtos_2441_1_8e68872d8660ef9b9ac4763d289d9fa2.jpg",
-      "id": 8
-    },
-    {
-      "name": "Notebook IdeaPad 3i 15\"",
-      "price": 2520,
+      "name": "EA SPORTS FC 24",
+      "price": 230,
       "qtd": 1,
-      "category": "Notebook/Computadores",
-      "img": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-3i-15in-hero.png?context=bWFzdGVyfHJvb3R8MzM3NTg5fGltYWdlL3BuZ3xoM2MvaDExLzE0MTkxNTE3NDAxMTE4LnBuZ3w4OTg2YTg5YzQ0ZmFiZDYzOTdjZTkzNDJjNDY3MTJlODM4YTQ2ODdlMGVmZTFlYjBiODRjYWFmY2JjOTBkODNj",
-      "id": 9
+      "category": "Jogo PS5",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2023/08/produto/3805/ea-sports-fc-24-ps5-a.jpg?ims=600x600",
+      "id": 18
     },
     {
-      "name": "Perfume DEFY EAU 100ml",
-      "price": 66.9,
+      "name": "Jogo Ghost of Tsushima Versão do Diretor",
+      "price": 280,
+      "qtd": 1,
+      "category": "Jogo PS5",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2023/01/produto/2386/jogo-ghost-of-tsushima-versao-do-diretor-ps5-a-copiar.jpg?ims=600x600",
+      "id": 19
+    },
+    {
+      "name": "Spider-Man 2",
+      "price": 140,
+      "qtd": 1,
+      "category": "Jogo PS5",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2023/10/produto/4038/jogo-spider-man-2-ps5-a.jpg?ims=600x600",
+      "id": 20
+    },
+    {
+      "name": "Dark Souls Remastered",
+      "price": 90,
       "qtd": 2,
-      "category": "Perfume Masculino",
-      "img": "https://cdn.dooca.store/3359/products/0ulvmrdzkta42t56t6zjam77dmnpfmk8zn6g.png?v=1693883879",
-      "id": 11
+      "category": "Jogo PS4",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2022/05/produto/947/jogo-dark-souls-remastered-ps4-a.png?ims=600x600",
+      "id": 21
     },
     {
-      "name": "Headphone Philips com Microfone",
-      "price": "150",
-      "qtd": "2",
-      "category": "Headphone",
-      "img": "https://images.tcdn.com.br/img/img_prod/740836/fone_de_ouvido_headphone_philips_com_microfone_preto_p3_tauh201bk_00_8821_1_7e7e62112f9db6aa9bdae3eb6b50d8fd.jpg",
-      "id": 12
+      "name": "Gran Turismo 7",
+      "price": 80,
+      "qtd": 2,
+      "category": "Jogo PS4",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2022/05/produto/971/jogo-gran-turismo-7-ps4-a.png?ims=600x600",
+      "id": 22
+    },
+    {
+      "name": "God of War Ragnarök",
+      "price": 100,
+      "qtd": 2,
+      "category": "Jogo PS4",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2022/11/produto/2196/god-of-war-ragnarok.jpg?ims=600x600",
+      "id": 23
+    },
+    {
+      "name": "Dirt 5",
+      "price": 85,
+      "qtd": 2,
+      "category": "Jogo PS4",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2022/05/produto/914/jogo-dirt-5-ps4-a.jpg?ims=600x600",
+      "id": 24
+    },
+    {
+      "name": "Minecraft Dungeons",
+      "price": 85,
+      "qtd": 2,
+      "category": "Jogo XBOX",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2022/05/produto/1118/jogo-minecraft-dungeons-xbox-one-a.png?ims=600x600",
+      "id": 25
+    },
+    {
+      "name": "NBA 2K22",
+      "price": 100,
+      "qtd": 2,
+      "category": "Jogo XBOX",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2022/05/produto/1115/jogo-nba-2k22-xbox-series-a.png?ims=600x600",
+      "id": 26
+    },
+    {
+      "name": "Grand Theft Auto: The Trilogy (The Definitive Edition)",
+      "price": 120,
+      "qtd": 2,
+      "category": "Jogo XBOX",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2022/05/produto/1120/jogo-grand-theft-auto-jogo-grand-theft-auto-the-trilogy-the-definitive-edition-xbox-series-a.png?ims=600x600",
+      "id": 27
+    },
+    {
+      "name": "Battlefield 2042",
+      "price": 130,
+      "qtd": 1,
+      "category": "Jogo XBOX",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2022/05/produto/1133/jogo-battlefield-2042-xbox-one-a.jpg?ims=600x600",
+      "id": 28
+    },
+    {
+      "name": "he Dark Pictures Anthology: Little Hope",
+      "price": 80,
+      "qtd": 1,
+      "category": "Jogo XBOX",
+      "img": "https://global.cdn.magazord.com.br/gamemania/img/2022/05/produto/1113/jogo-the-dark-pictures-anthology-little-hope-xbox-one-a.jpg?ims=600x600",
+      "id": 29
     }
   ],
   "usuarios": [
     {
-      "email": "teste@gmail.com",
-      "nome": "User",
+      "email": "usuario@usuario.com.br",
+      "nome": "Usuário Teste",
       "password": "123",
       "id": 1
     }

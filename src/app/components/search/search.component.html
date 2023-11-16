@@ -14,9 +14,6 @@
       <p class="ms-3 mb-4"><span>Categoria:</span> {{ product.category }}</p>
       <h4 class="ms-3 mb-2"><span>Preço:</span> R$ {{ product.price }}</h4>
       <div class="ms-3 mt-5">
-        <button class="btn btn-success bi bi-cart4" type="button">
-          Comprar
-        </button>
         <button
           routerLink="/details/{{ product.id }}"
           class="btn btn-dark ms-1"
