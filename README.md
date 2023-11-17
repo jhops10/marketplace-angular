@@ -1,27 +1,18 @@
-# MarketplaceAngular
+# Casa do Console
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
+## Descrição
 
-## Development server
+O site Casa do Console é uma plataforma de marketplace desenvolvida como parte de um estudo das tecnologias front-end. Permitindo que os usuários se cadastrem como vendedores e/ou consumidores, a plataforma oferece funcionalidades distintas para ambas as categorias.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Como vendedor, você tem a capacidade de adicionar, editar e remover produtos da lista disponível no site, proporcionando uma gestão eficiente do seu catálogo. Por outro lado, como usuário, você pode explorar os produtos, adicioná-los ao carrinho e concluir a compra de forma simples e intuitiva. Após a compra, os usuários têm acesso à sua lista de pedidos, proporcionando uma visão clara e organizada do histórico de compras.
 
-## Code scaffolding
+## Tecnologias Utilizadas
+ * Angular
+ * TypeScript
+ * Bootstrap
+ * CSS
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Como Rodar
+* Clone o Repositório
+* Execute o Frontend com o comando __'ng serve'__
+* Execute o comando __'json-server --watch db.json'__
